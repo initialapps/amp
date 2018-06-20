@@ -230,6 +230,34 @@ ul, ol {
 	.navbar-custom .navbar-toggle {
 		padding: 10px 15px;;
 	}
+
+	.navbar-custom .navbar-brand {
+		height: 60px;
+	}
+	
+	.navbar-custom .nav-button {
+		margin: 9px 0px 9px 15px !important;
+		padding: 10px 15px !important;
+	}
+	
+	.navbar-custom .nav li a {
+		font-family:'Roboto', sans-serif;
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+		color: #111111;
+		padding: 20px 10px;
+		margin: 0px;
+		font-size: inherit;
+	}
+	
+	.navbar-custom .nav li a:hover {
+		outline: 0;
+		color: #c00404;
+		background-color: transparent;
+	}
+
+
 }
 
 /*********************** Home Section *************************/
@@ -429,6 +457,10 @@ ul, ol {
 footer {
 	padding: 80px 0 20px;
 	background: #2d3949;
+}
+
+footer iframe {
+	max-width:100%;
 }
 
 footer p {

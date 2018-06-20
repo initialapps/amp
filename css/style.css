@@ -1,7 +1,7 @@
 /****************  General Style  ******************/
 /* General page formating*/
 body, html {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #4a525d;
@@ -52,7 +52,7 @@ a:hover, a:focus {
 
 .btn-default {
 	color: #f6f6f6;
-	background: #1cc878;
+	background: #0160AE;
 	border: 0;
 	padding: 12px 24px;
 	margin: 0 8px;
@@ -62,7 +62,7 @@ a:hover, a:focus {
 
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
 	color: #f6f6f6;
-	background-color: #1cc878;
+	background-color: #0160AE;
 }
 
 /* Add a separating line */
@@ -78,8 +78,8 @@ hr {
 }
 
 /* Add some font styling */
-h3 {
-	font-family:'Courgette', cursive;
+h2, h3 {
+	font-family:'Lato', sans-serif;
 }
 
 /* How your list items will look */
@@ -99,7 +99,6 @@ ul, ol {
 	font-size: 27px;
 	line-height: 40px;
 	font-weight: bold;
-	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 }
 
@@ -110,7 +109,7 @@ ul, ol {
 .navbar-custom {
 	background:#ffffff;
 	margin-bottom: 0px;
-	border-bottom: 2px solid #BBBBBB;
+	border-bottom: 1px solid #CCCCCC;
 }
 
 .navbar-custom .navbar-toggle {
@@ -124,15 +123,19 @@ ul, ol {
 }
 
 .navbar-custom .navbar-brand {
-	font-family:'Courgette', cursive;
-	font-size: 24px;
+	font-family:'Roboto', sans-serif;
+	font-size: 18px;
 	font-weight: 500;
-	padding: 20px 15px;
-	height:60px;
+	padding: 5px 15px;
+	height:80px;
 	-webkit-transition: all .3s;
 	-moz-transition: all .3s;
 	transition: all .3s;
-	color: #0D263B;
+	color: #111111;
+}
+
+.navbar-custom .navbar-brand img{
+	max-height: 100%;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus, .navbar-custom .navbar-brand .navbar-toggle:active {
@@ -140,26 +143,62 @@ ul, ol {
 	color: #FFFFFF;
 }
 
+.navbar-custom .nav-button {
+	padding: 15px 15px !important;
+	margin: 13px 0px 13px 15px !important;
+	border-radius: 5px;
+	color: #c00404 !important;
+	font-weight: bold;
+	background: transparent;
+	border: #c00404 solid 1px;
+	text-align: center;
+}
+
 .navbar-custom .nav li a {
-	font-family:'Raleway', sans-serif;
+	font-family:'Roboto', sans-serif;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
-	color: #0D263B;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	color: #111111;
+	padding: 30px 10px;
 }
 
 .navbar-custom .nav li a:hover {
 	outline: 0;
-	color: #226297;
+	color: #c00404;
+	background-color: transparent;
+}
+
+.navbar-shrink .navbar-brand {
+	height: 60px;
+}
+
+.navbar-shrink .nav-button {
+	margin: 9px 0px 9px 15px !important;
+	padding: 10px 15px !important;
+}
+
+.navbar-shrink .nav li a {
+	font-family:'Roboto', sans-serif;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	color: #111111;
+	padding: 20px 10px;
+	margin: 0px;
+	font-size: inherit;
+}
+
+.navbar-shrink .nav li a:hover {
+	outline: 0;
+	color: #c00404;
 	background-color: transparent;
 }
 
 .navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
 	outline: 0;
 	background-color: transparent;
-	color: #226297;
+	color: #c00404;
 }
 
 .navbar-custom .nav li.active {
@@ -171,7 +210,7 @@ ul, ol {
 }
 
 .navbar-custom .nav li.active a:hover {
-	color: #226297;
+	color: #c00404;
 }
 
 @media only screen and (max-width:768px){
@@ -194,44 +233,23 @@ ul, ol {
 }
 
 /*********************** Home Section *************************/
-#intro-1 {
-	display: table;
-	width: 100%;
-	max-height: 560px;
-	height: auto;
-	padding: 0 ;
-	color: #FFFFFF;
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url(http://res.cloudinary.com/initialapps/image/upload/c_scale,w_1400/v1529371109/aroma-blooming-lavender-close-up-207518.jpg) no-repeat center left 45%;
-	background-color: #000;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
-
-#intro-2 {
-	display: table;
-	width: 100%;
-	max-height: 560px;
-	height: auto;
-	padding: 0;
-	color: #FFFFFF;
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url(http://res.cloudinary.com/initialapps/image/upload/c_scale,w_1400/v1529371130/beach-boat-dawn-127160.jpg) no-repeat center left 45%;
-	background-color: #000;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
-
 #intro {
+	display: table;
+	max-height: 560px;
+	color: #F4F4F4;
+	width: 100%;
+	background: linear-gradient(-90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(http://res.cloudinary.com/initialapps/image/upload/c_scale,w_1400/v1529473109/bg1.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
 	background-color:#EEE;
 }
 
 #intro .intro-body {
 	display: table-cell;
 	vertical-align: middle;
-	padding:200px 150px;
+	padding:350px 150px 150px;
 }
 
 #intro .intro-body H1 {
@@ -247,6 +265,9 @@ ul, ol {
 #intro .intro-body H3 {
 	font-size: 32px;
 	font-weight: 500;
+	font-style: italic;
+	font-family: 'Merriweather', serif;
+	color: #CFCFCF;
 }
 
 #intro a{
@@ -299,111 +320,79 @@ ul, ol {
 	}
 }
 
+
+/*************** Precision Components Section ****************/
+#precision-components {
+	padding: 100px 0;
+	opacity: 1;
+	color: #666;
+}
+
+#precision-components h2 {
+	color: #222222;
+	font-family: 'Lato', sans-serif;
+}
+
+#precision-components h3 {
+	font-style: italic;
+	font-family: 'Merriweather', serif;
+}
+
+#precision-components img {
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/******************* Services Section ********************/
+#industries-served {
+	padding: 100px 0;
+	opacity: 1;
+	color: #666;
+	background-color:#EEE;
+}
+
+#industries-served h2{
+	color: #222222;
+}
+
+#industries-served .checklist{
+	color: #333333;
+}
+
+#industries-served img {
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	max-width:480px;
+	max-height:450px;
+}
+
+#industries-served h3 {
+	font-family: 'Merriweather', serif;
+	font-style: italic;
+}
+
+
+
 /******************* About Section *******************/
 #about {
-	padding: 40px 0 100px;
-	background-color:#EEE;
+	padding: 80px 0 120px;
 }
 
 #about h2 {
 	color: #222222;
 }
 
-
-/*************** Capabilities Section ****************/
-#capabilities {
-	padding: 80px 0;
-	opacity: 1;
-	color: #666;
+#about h3 {
+	font-family: 'Merriweather', serif;
+	font-style: italic;
 }
-
-#capabilities h2 {
-	color: #222222;
-}
-
-#capabilities img {
-	margin-bottom:10px;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-/***************** Testimonials Section *******************/
-
-/* adding some parallax */
-#testimonials {
-	background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/parallax.jpeg);
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	color: #FFFFFF;
-	padding: 100px 0 60px;
-}
-
-@media only screen and (max-width:768px){
-	#testimonials {
-		background-attachment: initial;
-		background-size: 1800px;
-	}
-}
-
-#testimonials h2 {
-	color: #FFFFFF;
-}
-
-#testimonials hr {
-	margin-bottom: 0px;
-}
-
-#testimonials .section-title {
-	padding: 15px 0px;
-}
-
-#testimonials blockquote {
-	position: relative;
-	margin-top: 20px;
-	border: 0;
-	text-align: center;
-	color: #FFFFFF;
-}
-
-#testimonials i {
-	font-size: 24px;
-	color: #FFFFFF;
-	margin-bottom: 14px;
-}
-
-#testimonials .clients-name {
-	display: inline-block;
-	border-top: 1px solid rgba(255,255,255,0.3);
-	padding: 20px 0;
-	margin-top: 10px;
-}
-
-
-/******************* Services Section ********************/
-#services {
-	padding: 80px 0;
-	opacity: 1;
-	color: #666;
-}
-
-#services h2 {
-	color: #222222;
-}
-
-#services img {
-	margin-bottom:10px;
-	margin-left:auto;
-	margin-right:auto;
-	max-width:100%;
-	max-height:450px;
-}
-
 
 /**************** Action Section *********************/
 #action {
 	padding: 50px 0;
-	background-color: #1cc878;
+	background-color: #0160AE;
 	color: #FFFFFF;
 }
 
@@ -412,7 +401,7 @@ ul, ol {
 	font-size: 27px;
 	line-height: 40px;
 	font-weight: bold;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 };
 
@@ -466,7 +455,7 @@ footer hr {
 
 footer li, footer a, footer p{
 	color: #FFFFFF;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 footer ul {

@@ -46,6 +46,31 @@ function loadSite() {
 			offset: 80
 		})
 
+		// Collapse Navbar
+		var navbarCollapse = function() {
+			if ($("#top-navbar").offset().top > 100) {
+				$("#top-navbar").addClass("navbar-shrink");
+			} else {
+				$("#top-navbar").removeClass("navbar-shrink");
+			}
+		};
+		// Collapse now if page is not at top
+		navbarCollapse();
+		// Collapse the navbar when page is scrolled
+		$(window).scroll(navbarCollapse);
+
+		$('.industries-slider').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			fade:true,
+			autoplay: true,
+			cssEase: 'linear',
+			arrows: false,
+			autoplaySpeed: 2000
+		});
+
+
+
 	}());
 }
 loadSite();

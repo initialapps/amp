@@ -333,7 +333,7 @@ ul, ol {
 /* making it look nice in mobile */
 @media(max-width:768px) {
 	#intro {
-		padding: 0;
+		padding: 80px 0px;
 	}
 	#intro .intro-body {
 		display: table-cell;
@@ -344,7 +344,11 @@ ul, ol {
 		padding-right: 50px;
 	}
 	#intro .intro-body H1 {
-		font-size: 2.5em;
+		font-size: 28px;
+		line-height: 34px;
+	}
+	#intro .intro-body H3 {
+		font-size: 22px;
 	}
 }
 
@@ -374,26 +378,25 @@ ul, ol {
 
 /******************* Services Section ********************/
 #industries-served {
-	padding: 100px 0;
-	opacity: 1;
-	color: #666;
-	background-color:#EEE;
+	color: #FFF;
+	background-color:#222222;
 }
 
-#industries-served h2{
-	color: #222222;
+#industries-served hr{
+	margin: 20px 0px 40px 0px;
+	width: 200px;
 }
 
-#industries-served .checklist{
-	color: #333333;
+#industries-served .check-list {
+	padding:50px;
+}
+
+#industries-served .industries-slider {
+	padding:0px;
 }
 
 #industries-served img {
-	margin-bottom:10px;
-	margin-left:auto;
-	margin-right:auto;
-	max-width:480px;
-	max-height:450px;
+	margin:0px;
 }
 
 #industries-served h3 {

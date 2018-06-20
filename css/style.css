@@ -82,6 +82,10 @@ h2, h3 {
 	font-family:'Lato', sans-serif;
 }
 
+img {
+	max-width:100%;
+}
+
 /* How your list items will look */
 ul, ol {
 	list-style: none;

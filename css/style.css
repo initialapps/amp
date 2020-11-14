@@ -82,6 +82,10 @@ h2, h3 {
 	font-family:'Lato', sans-serif;
 }
 
+img {
+	max-width:100%;
+}
+
 /* How your list items will look */
 ul, ol {
 	list-style: none;
@@ -230,6 +234,34 @@ ul, ol {
 	.navbar-custom .navbar-toggle {
 		padding: 10px 15px;;
 	}
+
+	.navbar-custom .navbar-brand {
+		height: 60px;
+	}
+	
+	.navbar-custom .nav-button {
+		margin: 9px 0px 9px 15px !important;
+		padding: 10px 15px !important;
+	}
+	
+	.navbar-custom .nav li a {
+		font-family:'Roboto', sans-serif;
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+		color: #111111;
+		padding: 20px 10px;
+		margin: 0px;
+		font-size: inherit;
+	}
+	
+	.navbar-custom .nav li a:hover {
+		outline: 0;
+		color: #c00404;
+		background-color: transparent;
+	}
+
+
 }
 
 /*********************** Home Section *************************/
@@ -238,7 +270,7 @@ ul, ol {
 	max-height: 560px;
 	color: #F4F4F4;
 	width: 100%;
-	background: linear-gradient(-90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(http://res.cloudinary.com/initialapps/image/upload/c_scale,w_1400/v1529473109/bg1.jpg) no-repeat center;
+	background: linear-gradient(-90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(https://res.cloudinary.com/initialapps/image/upload/c_scale,w_1400/v1529473109/bg1.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -305,7 +337,7 @@ ul, ol {
 /* making it look nice in mobile */
 @media(max-width:768px) {
 	#intro {
-		padding: 0;
+		padding: 80px 0px;
 	}
 	#intro .intro-body {
 		display: table-cell;
@@ -316,7 +348,11 @@ ul, ol {
 		padding-right: 50px;
 	}
 	#intro .intro-body H1 {
-		font-size: 2.5em;
+		font-size: 28px;
+		line-height: 34px;
+	}
+	#intro .intro-body H3 {
+		font-size: 22px;
 	}
 }
 
@@ -347,26 +383,25 @@ ul, ol {
 
 /******************* Services Section ********************/
 #industries-served {
-	padding: 100px 0;
-	opacity: 1;
-	color: #666;
-	background-color:#EEE;
+	color: #FFF;
+	background-color:#222222;
 }
 
-#industries-served h2{
-	color: #222222;
+#industries-served hr{
+	margin: 20px 0px 40px 0px;
+	width: 200px;
 }
 
-#industries-served .checklist{
-	color: #333333;
+#industries-served .check-list {
+	padding:50px;
+}
+
+#industries-served .industries-slider {
+	padding:0px;
 }
 
 #industries-served img {
-	margin-bottom:10px;
-	margin-left:auto;
-	margin-right:auto;
-	max-width:480px;
-	max-height:450px;
+	margin:0px;
 }
 
 #industries-served h3 {
@@ -442,6 +477,10 @@ ul, ol {
 footer {
 	padding: 80px 0 20px;
 	background: #2d3949;
+}
+
+footer iframe {
+	max-width:100%;
 }
 
 footer p {

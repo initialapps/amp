@@ -336,6 +336,7 @@ ul, ol {
 #precision-components h3 {
 	font-style: italic;
 	font-family: 'Merriweather', serif;
+	line-height: inherit;
 }
 
 #precision-components img {
@@ -387,6 +388,18 @@ ul, ol {
 #about h3 {
 	font-family: 'Merriweather', serif;
 	font-style: italic;
+}
+
+#about .logo {
+	padding: 60px 25px;
+}
+
+#about h4 {
+	font-weight: bold;
+}
+
+#about img {
+	width: 100%;
 }
 
 /**************** Action Section *********************/

@@ -375,6 +375,23 @@ ul, ol {
 	line-height: inherit;
 }
 
+#precision-components h4 {
+	color: #222222;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 30px 10px 10px;
+}
+
+#precision-components .panel-default hr {
+	background: #c00404;
+	margin-bottom: 0px;
+	width: 40px;
+}
+
+#precision-components .panel-default p {
+	padding: 30px;
+}
+
 #precision-components img {
 	margin-bottom:10px;
 	margin-left:auto;
